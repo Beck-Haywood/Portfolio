@@ -1,0 +1,49 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="submit" id="button">
+        <div class="card flip">
+            Test text
+
+        </div>
+        <style>
+            html { 
+                background: url("purplebackground.jpg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+              }
+            html, body {
+                margin: 0; height: 100%; overflow: hidden
+            }
+            .card {
+                transform: rotateY(0deg);
+                transition: 1000ms;
+                background-color: white;
+                width: 500px;
+                height: 500px;
+            }
+            .flip {
+
+                transform: rotateY(180deg);
+               /* -webkit-transform: rotateY(180deg); */ 
+                -webkit-backface-visibility: hidden; 
+            }
+
+        </style>
+        <script>
+
+            const card = document.querySelector('.card')
+            const button = document.getElementById('button')
+
+            button.addEventListener('click', function(e) {
+                card.classList.toggle('flip')
+            })
+
+        </script>
+
+    </body>
+</html>
