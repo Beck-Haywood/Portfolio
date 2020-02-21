@@ -3,11 +3,32 @@
 
     </head>
     <body>
-        <input type="submit" id="button">
-        <div class="card flip">
-            Test text
-
+        <div class="card flip" id="c1">
+            <h1>About me</h1>
+            <p>111111111111111111111111111111111111</p>
+            <input type="submit" value="Close" id="close1">
         </div>
+        <div class="card flip" id="c2">
+            <h1>Resume</h1>
+            <p>222222222222222222222222222222222222</p>
+            <input type="submit" value="Close" id="close2">
+        </div>
+        <div class="card flip" id="c3">
+            <h1>Projects</h1>
+            <p>33333333333333333333333333333333333</p>
+            <input type="submit" value="Close" id="close3">
+            
+        </div>
+        <div class="card flip" id="c4">
+            <h1>Contact me</h1>
+            <p>44444444444444444444444444444444444</p>
+            <input type="submit" value="Close" id="close4">
+        </div>
+        <input type="submit" value="About me" id="button1" class="topleft">
+        <input type="submit" value="Resume" id="button2" class="topright">
+        <input type="submit" value="Projects" id="button3" class="bottomleft">
+        <input type="submit" value="Contact me" id="button4" class="bottomright">
+
         <style>
             html { 
                 background: url("purplebackground.jpg") no-repeat center center fixed; 
@@ -21,27 +42,123 @@
             }
             .card {
                 transform: rotateY(0deg);
+                /* transform: rotateY(0deg) translate(-50%, -50%); */
                 transition: 1000ms;
                 background-color: white;
                 width: 500px;
                 height: 500px;
+                position: absolute;
+                left: calc(50% - 250px);
+                top: calc(50% - 250px);
             }
             .flip {
-
                 transform: rotateY(180deg);
-               /* -webkit-transform: rotateY(180deg); */ 
+               /* -webkit-transform: rotateY(180deg); 
+               transform: rotateY(180deg) translate(-50%, -50%);
+               */ 
                 -webkit-backface-visibility: hidden; 
+            }
+            .hide-button { 
+                cursor: pointer; display: none;
+            }
+            .topleft {
+                left: 25%;
+                top: 25%;
+                position: absolute;
+            }
+            .topright {
+                right: 25%;
+                top: 25%;
+                position: absolute;
+            }
+            .bottomleft {
+                left: 25%;
+                bottom: 25%;
+                position: absolute;
+            }
+            .bottomright {
+                right: 25%;
+                bottom: 25%;
+                position: absolute;
             }
 
         </style>
         <script>
 
-            const card = document.querySelector('.card')
-            const button = document.getElementById('button')
+            const card1 = document.getElementById('c1')
+            const card2 = document.getElementById('c2')
+            const card3 = document.getElementById('c3')
+            const card4 = document.getElementById('c4')
 
-            button.addEventListener('click', function(e) {
-                card.classList.toggle('flip')
+            const button1 = document.getElementById('button1')
+            const button2 = document.getElementById('button2')
+            const button3 = document.getElementById('button3')
+            const button4 = document.getElementById('button4')
+
+            const close1 = document.getElementById('close1')
+            const close2 = document.getElementById('close2')
+            const close3 = document.getElementById('close3')
+            const close4 = document.getElementById('close4')
+
+            button1.addEventListener('click', function(e) {
+                card1.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+
             })
+            button2.addEventListener('click', function(e) {
+                card2.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+            })
+            button3.addEventListener('click', function(e) {
+                card3.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+            })
+            button4.addEventListener('click', function(e) {
+                card4.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+            })
+
+            close1.addEventListener('click', function(e) {
+                card1.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+            })
+            close2.addEventListener('click', function(e) {
+                card2.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+            })
+            close3.addEventListener('click', function(e) {
+                card3.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+            })
+            close4.addEventListener('click', function(e) {
+                card4.classList.toggle('flip')
+                button1.classList.toggle('hide-button')
+                button2.classList.toggle('hide-button')
+                button3.classList.toggle('hide-button')
+                button4.classList.toggle('hide-button')
+            })
+            
 
         </script>
 
