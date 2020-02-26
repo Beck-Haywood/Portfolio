@@ -15,6 +15,8 @@ const close2 = document.getElementById('close2')
 const close3 = document.getElementById('close3')
 const close4 = document.getElementById('close4')
 
+const cont = document.getElementById('cont')
+
 function hideButton(button) {
     var x = document.getElementById(button);
     if (x.style.display === "none") {
@@ -26,6 +28,7 @@ function hideButton(button) {
 
 button1.addEventListener('click', function(e) {
     card1.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
@@ -33,6 +36,7 @@ button1.addEventListener('click', function(e) {
 })
 button2.addEventListener('click', function(e) {
     card2.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
@@ -40,6 +44,7 @@ button2.addEventListener('click', function(e) {
 })
 button3.addEventListener('click', function(e) {
     card3.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
@@ -47,6 +52,7 @@ button3.addEventListener('click', function(e) {
 })
 button4.addEventListener('click', function(e) {
     card4.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
@@ -55,6 +61,7 @@ button4.addEventListener('click', function(e) {
 
 close1.addEventListener('click', function(e) {
     card1.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
@@ -62,6 +69,7 @@ close1.addEventListener('click', function(e) {
 })
 close2.addEventListener('click', function(e) {
     card2.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
@@ -69,6 +77,7 @@ close2.addEventListener('click', function(e) {
 })
 close3.addEventListener('click', function(e) {
     card3.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
@@ -76,6 +85,7 @@ close3.addEventListener('click', function(e) {
 })
 close4.addEventListener('click', function(e) {
     card4.classList.toggle('flip')
+    cont.classList.toggle('clickclose')
     hideButton("hide1")
     hideButton("hide2")
     hideButton("hide3")
