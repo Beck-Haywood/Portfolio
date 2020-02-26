@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="night.css">
+        <link rel="stylesheet" type="text/css" href="mycss.css">
+<!-- Use
+user-select: none; So buttons and text cant be highlited accidently.
+
+make a footer with github linked in logo and copyright
+
+put buttons right under title in a row so its easy to see.
+
+Choose fonts using google fonts so im not generic.
+-->
+        <style>
+            #bgCanvas {
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: no-repeat center center fixed; 
+                background-size: cover;
+            }
+            .content {
+                width: 1680px;
+                height: 952px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #fff;
+                z-index: 999;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="bgCanvas"></canvas>
+        <div class="content">
+            <h1 class="title">Beck Haywood</h1>
+            <div class="card flip" id="c1">
+                <h1>About me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
+                <a class="close" id="close1"></a>
+            </div>
+            <div class="card flip" id="c2">
+                <h1>Resume</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
+                <a class="close" id="close2"></a>
+            </div>
+            <div class="card flip" id="c3">
+                <h1>Projects</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
+                <a class="close" id="close3"></a>                
+            </div>
+            <div class="card flip" id="c4">
+                <h1>Contact me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
+                <a class="close" id="close4"></a>
+            </div>
+            <div class="button_cont" id="hide1"><a class="example_b topleft" id="button1">About me</a></div>
+            <div class="button_cont" id="hide2"><a class="example_b topright" id="button2">Resume</a></div>
+            <div class="button_cont" id="hide3"><a class="example_b bottomleft" id="button3">Projects</a></div>
+            <div class="button_cont" id="hide4"><a class="example_b bottomright" id="button4">Contact me</a></div>
+        </div>
+    </body>
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="myjs.js"></script>   
+</html>
