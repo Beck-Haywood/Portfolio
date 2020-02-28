@@ -4,6 +4,8 @@
         <link rel="stylesheet" type="text/css" href="mycss.css">
 <!-- Use
 make a footer with github linked in logo and copyright
+
+ Fill out info for cards 1 hours. Style cards round edges. design. 3 hours. Finish homepage. 1 hour
 -->
         <style>
             #bgCanvas {
@@ -35,7 +37,7 @@ make a footer with github linked in logo and copyright
             </div>
             <div class="card flip" id="c2">
                 <h1>Resume</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
+                <div class="scroll"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p></div>
                 <a class="close" id="close2"></a>
             </div>
             <div class="card flip" id="c3">
@@ -43,25 +45,60 @@ make a footer with github linked in logo and copyright
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
                 <a class="close" id="close3"></a>                
             </div>
-            <div class="card flip" id="c4">
-                <h1>Contact me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
-                <a class="close" id="close4"></a>
-            </div>
             <div class="container" id="cont">
                 <div class="button_cont" id="hide1"><a class="example_b topleft" id="button1">About me</a></div>
                 <div class="button_cont" id="hide2"><a class="example_b topright" id="button2">Resume</a></div>
                 <div class="button_cont" id="hide3"><a class="example_b bottomleft" id="button3">Projects</a></div>
-                <div class="button_cont" id="hide4"><a class="example_b bottomright" id="button4">Contact me</a></div>
             </div>
-            <div class="darkBack footerContainer centered">
+            <footer>
+                <div class="social-media-links">
+                    <div class="copyright">
+                         © 2020 Beck Haywood
+                    </div>
+                    <ul>
+                        <li>
+                            <a class="glow a" href="https://github.com/Beck-Haywood">
+                                <img src="git.png" alt="githublogo" style="width:42px;height:42px;border:0;">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="glow a" href="https://www.linkedin.com/in/beck-haywood-47073818a/">
+                                <img src="linkedin.png" alt="linkedinlogo" style="width:42px;height:42px;border:0;">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="glow a" href="https://www.makeschool.com/portfolio/Beck-Haywood">
+                                <img src="makenew.png" alt="maillogo" style="width:50px;height:auto;border:0; position:relative; left: -3px; top: -3px">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="glow a" href="mailto:haywoodbeck12@gmail.com">
+                                <img src="mail.png" alt="maillogo" style="width:42;height:35px;border:0; position:relative; left: -3px; top: -8px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <!--<div class="darkBack footerContainer centered">
                 <div class="footer">
                   <div><a href="#" class="footerLink">Privacy policy</a></div>
                   <div><a href="#" class="footerLink">Contact</a></div>
                   <div><a href="#" class="footerLink">Help</a></div>
                   <div><a href="#" class="footerLink">CAKE!!!!!</a></div>
+                  <div><a class="footerLink" href="https://github.com/Beck-Haywood">
+                    <img src="git.png" alt="githublogo" style="width:42px;height:42px;border:0;">
+                  </a></div>
+                  <div><a class="footerLink" href="https://www.linkedin.com/in/beck-haywood-47073818a/">
+                    <img src="linkedin.png" alt="linkedinlogo" style="width:42px;height:42px;border:0;">
+                  </a></div>
+                  <div><a class="footerLink" href="mailto:haywoodbeck12@gmail.com">
+                    <img src="mail.png" alt="maillogo" style="width:55px;height:42px;border:0;">
+                  </a></div>
+                  <div><a class="footerLink" href="https://www.makeschool.com/portfolio/Beck-Haywood">
+                    <img src="make.png" alt="maillogo" style="width:75px;height:60px;border:0;">
+                  </a></div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </body>
     <script type="text/javascript" src="canvas.js"></script>

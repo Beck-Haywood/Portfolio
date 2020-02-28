@@ -25,69 +25,77 @@ function hideButton(button) {
       x.style.display = "none";
     }
 }
+function lessTheOppacity(button)
+{
+    var z = document.getElementById(button);
+    var oppArray = ["1", "0.8", "0.7", "0.6", "0.5", "0.4", "0.3", "0.2", "0.1", "0"];
+    var x = 0;
+    (function next() {
+        z.style.opacity = oppArray[x];
+        if(++x < oppArray.length) {
+            setTimeout(next, 40); //depending on how fast you want to fade
+        }
+    })();
+}
+function increaseTheOppacity(button)
+{
+    var z = document.getElementById(button);
+    var oppArray = ["0", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "1"];
+    var x = 0;
+    (function next() {
+        z.style.opacity = oppArray[x];
+        if(++x < oppArray.length) {
+            setTimeout(next, 40); //depending on how fast you want to fade
+        }
+    })();
+}
 
 button1.addEventListener('click', function(e) {
     card1.classList.toggle('flip')
     cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
+    lessTheOppacity("hide1")
+    lessTheOppacity("hide2")
+    lessTheOppacity("hide3")
+    lessTheOppacity("hide4")
 })
 button2.addEventListener('click', function(e) {
     card2.classList.toggle('flip')
     cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
+    lessTheOppacity("hide1")
+    lessTheOppacity("hide2")
+    lessTheOppacity("hide3")
+    lessTheOppacity("hide4")
 })
 button3.addEventListener('click', function(e) {
     card3.classList.toggle('flip')
     cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
-})
-button4.addEventListener('click', function(e) {
-    card4.classList.toggle('flip')
-    cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
+    lessTheOppacity("hide1")
+    lessTheOppacity("hide2")
+    lessTheOppacity("hide3")
+    lessTheOppacity("hide4")
 })
 
 close1.addEventListener('click', function(e) {
     card1.classList.toggle('flip')
     cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
+    increaseTheOppacity("hide1")
+    increaseTheOppacity("hide2")
+    increaseTheOppacity("hide3")
+    increaseTheOppacity("hide4")
 })
 close2.addEventListener('click', function(e) {
     card2.classList.toggle('flip')
     cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
+    increaseTheOppacity("hide1")
+    increaseTheOppacity("hide2")
+    increaseTheOppacity("hide3")
+    increaseTheOppacity("hide4")
 })
 close3.addEventListener('click', function(e) {
     card3.classList.toggle('flip')
     cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
-})
-close4.addEventListener('click', function(e) {
-    card4.classList.toggle('flip')
-    cont.classList.toggle('clickclose')
-    hideButton("hide1")
-    hideButton("hide2")
-    hideButton("hide3")
-    hideButton("hide4")
+    increaseTheOppacity("hide1")
+    increaseTheOppacity("hide2")
+    increaseTheOppacity("hide3")
+    increaseTheOppacity("hide4")
 })

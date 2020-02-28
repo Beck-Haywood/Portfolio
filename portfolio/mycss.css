@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
+
+
 html, body {
     margin: 0;
     font-family: 'Roboto';
@@ -15,6 +17,8 @@ html, body {
     position: absolute;
     left: calc(50% - 250px);
     top: calc(50% - 250px);
+    border-radius: 15px;
+    padding: 2em;
 }
 .flip {
     transform: rotateY(180deg);
@@ -29,11 +33,11 @@ html, body {
     cursor: pointer; display: none;
 }
 .container {
-    width: 1200px;
+    width: 600px;
     height: 100px;
     position: absolute;
     top: 20%;
-    left: 15%;
+    left: 31%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -41,32 +45,12 @@ html, body {
 .clickclose {
     pointer-events: none;
 }
-/*.topleft {
-    left: 25%;
-    top: 25%;
-    position: absolute;
-}
-.topright {
-    right: 25%;
-    top: 25%;
-    position: absolute;
-}
-.bottomleft {
-    left: 25%;
-    bottom: 25%;
-    position: absolute;
-}
-.bottomright {
-    right: 25%;
-    bottom: 25%;
-    position: absolute;
-}*/
 .title {
     color: white;
     font-size: 77px;
     position: absolute;
     /*top: calc(50% - 10px);*/
-    left: calc(50% - 247px);
+    left: calc(50% - 242px);
     user-select: none;
     font-family: 'Roboto Condensed';
 
@@ -118,95 +102,65 @@ html, body {
 .close:after {
     transform: rotate(-45deg);
 }
-.centered {
-    padding:0 100px;
-    max-width: 1680px;
-    margin:0 auto;
-  }
-  .center-align {
-    text-align:center;
-  }
-  .right-align {
-    text-align:right;
-  }
-  .darkBack {
-    background:#252E35;
-  }
-  .lightBack {
-    background:#444C54;
-  }
-  
-  .footerContainer {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 1680px;
-    height: 80px;
-    margin: 0;
-    padding: 0;
-  }
-  .footer {
-    margin:0;
-    padding:0;
-    display:flex;
-    height: 130px;
-    width: 1680px;
-  }
-  
-  .footer div {
-    display:inline-block;
-    flex-grow:1;
-    flex-basis: 0;
-    text-align:center;
-  }
-  
-  .footerLink {
-    color:white;
-    text-decoration:none;
-    display:block;
-    width:100%;
-    height: 80px;
-    line-height: 130px;
-    
-    flex-grow: 1;
-    
-    position: relative;
-    
-    transition: background-color 0.1s ease-in-out;
-  }
-  
-  .footerLink:hover {
-    background-color:#13171B;
-  }
-  
-  .footerLink:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 0%;
-    
-    box-sizing: border-box;
-    
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    
-    border-style: dashed;
-    border-width: 0px;
-    border-top-width: 4px;
-    border-bottom-width: 4px;
-    border-color: transparent;
-    
-    
-    background-color: transparent;
-    
-    transition: height 0.3s ease-in-out, border 0.3s ease-in-out, top 0.3s ease-in-out;
-  }
-  
-  .footerLink:hover:before {
-    height: 100%;
-    top: 0%;
-    border-color: #1F8C68;
-    
-    transition: height 0.3s ease-in-out, border 0.3s ease-in-out, top 0.3s ease-in-out;
-  }
+/* FOOOOOOTER */
+a.a {
+  border-bottom: 0px solid rgba(0,0,0,0.95);
+  border-radius: 4px;
+  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0), 0 6px 8px rgba(0,0,0,0), 0 24px 24px rgba(0,0,0,0), 0 36px 36px rgba(0,0,0,0), 0 64px 64px rgba(0,0,0,0), 0 64px 128px rgba(0,0,0,0), 0 120px 0 rgba(0,0,0,0), 0 86px 8px 6px rgba(0,0,0,0),;
+  display: inline-block;
+  height: 20px;
+  padding: 25px;
+  position: relative;
+  transition: .2s ease-in;
+  width: 30px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+div.social-media-links {
+  background: #191D4C;
+  overflow: hidden;
+  padding-bottom: 4px;
+  text-align: center;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  background: black;
+}
+img {
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+a:hover {
+  transform: translateY(-4px);
+  box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0.1), 0 6px 8px rgba(0,0,0,0.05), 0 24px 24px rgba(0,0,0,0.05), 0 36px 36px rgba(0,0,0,0.05), 0 64px 64px rgba(0,0,0,0.15), 0 64px 128px rgba(0,0,0,0.15), 0 86px 8px 6px fadeout(#0096a1, 75), 0 83px 4px 0px fadeout(#0096a1, 5);
+}
+.copyright {
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  left: 15px;
+  transform: translate(0, 50%);
+}
+/* more card stuff */
+div.scroll { 
+  margin:4px, 4px; 
+  padding:4px; 
+  width: 500px;
+  height: 500px;
+  overflow-x: hidden; 
+  overflow-x: auto; 
+  text-align:justify; 
+}
