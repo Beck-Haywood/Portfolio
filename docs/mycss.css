@@ -13,9 +13,9 @@ html, body {
     transition: 1000ms;
     background-color: #696969;
     width: 500px;
-    height: 500px;
+    height: 550px;
     position: absolute;
-    left: calc(50% - 250px);
+    left: calc(50% - 275px);
     top: calc(50% - 250px);
     border-radius: 15px;
     padding: 2em;
@@ -35,9 +35,10 @@ html, body {
 .container {
     width: 600px;
     height: 100px;
-    position: absolute;
-    top: 20%;
-    left: 31%;
+    /* position: absolute; */
+    top: 0%;
+    left: 0%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -48,9 +49,11 @@ html, body {
 .title {
     color: white;
     font-size: 77px;
-    position: absolute;
-    /*top: calc(50% - 10px);*/
-    left: calc(50% - 242px);
+    margin: auto;
+    width: 450px;
+    /* position: absolute; */
+    /* left: calc(50% - 242px); */
+    padding: 60px;
     user-select: none;
     font-family: 'Roboto Condensed';
 
@@ -130,10 +133,12 @@ div.social-media-links {
   text-align: center;
 }
 footer {
+  box-sizing: border-box;
   bottom: 0;
   left: 0;
   position: absolute;
-  right: 0;
+  /* right: 0; */
+  width: 100%;
   background: black;
 }
 .logoi {
@@ -155,12 +160,9 @@ a:hover {
   transform: translate(0, 50%);
 }
 /* more card stuff */
-div.scroll { 
-  margin:4px, 4px; 
-  padding:4px; 
-  width: 500px;
-  height: 500px;
-  overflow-x: hidden; 
-  overflow-x: auto; 
-  text-align:justify; 
+.portrait {
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
+

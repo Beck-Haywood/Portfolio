@@ -3,11 +3,6 @@
         <title>Beck Haywood</title>
         <link rel="stylesheet" type="text/css" href="night.css">
         <link rel="stylesheet" type="text/css" href="mycss.css">
-<!-- Use
-make a footer with github linked in logo and copyright
-
- Fill out info for cards 1 hours. Style cards round edges. design. 3 hours. Finish homepage. 1 hour
--->
         <style>
             #bgCanvas {
                 position: absolute;
@@ -17,13 +12,16 @@ make a footer with github linked in logo and copyright
                 background-size: cover;
             }
             .content {
-                width: 1680px;
-                height: 952px;
                 position: absolute;
+
                 left: 0;
                 top: 0;
+                
+                width: 100%;
+                height: 100%;
                 color: #fff;
                 z-index: 999;
+                
             }
         </style>
     </head>
@@ -34,20 +32,27 @@ make a footer with github linked in logo and copyright
             <div class="card flip" id="c1">
                 <h1>About me</h1>
                 <hr>
-                <img src='face.JPG' alt="Beck Headshot" height="350" width="350">
-                <div class="scroll"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum.</p></div>
+                <img class="portrait" src='face.JPG' alt="Beck Headshot" height="350" width="350">
+                <div><p>
+                    I grew up in Alaska and from a young age I took interest in robotics.
+                    High school robotics introduced me into programming, and that's where
+                    my drive to become a software engineer started. I am currently attending
+                    Make School and my graduating year is 2021.
+                </p></div>
                 <a class="close" id="close1"></a>
             </div>
             <div class="card flip" id="c3">
                 <h1>Projects</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut felis quis augue sagittis pharetra. Praesent tincidunt mollis fermentum. Sed placerat fermentum auctor. In non ullamcorper arcu, eu pretium tellus. Nunc condimentum felis enim, eget consequat quam aliquet nec. Nunc fermentum bibendum scelerisque. Morbi nec bibendum dolor. Proin nec interdum ligula. Aliquam dignissim eros et leo faucibus, ac tristique nibh dapibus.</p>
+                <hr>
+                <h2><a href="https://beck-haywood.github.io/LoLChampionApi/#/">Champ API</a></h2>
+                <p>This API is for grabbing champion statistics in the game League Of Legends, it is open source, and anyone can add to it! It was coded in Node and uses Mongodb for its database.</p>
+                <hr>
+                <h2>More soon to come!</h2>
                 <a class="close" id="close3"></a>                
             </div>
             <div class="container" id="cont">
                 <div class="button_cont" id="hide1"><a class="example_b topleft" id="button1">About me</a></div>
-                <!-- <div class="button_cont" id="hide2"><a class="example_b topright" id="button2">Resume</a></div> -->
                 <div class="button_cont" id="hide2"><a href="Resume- V1.pdf" class="example_b topright" target="_blank" id="button2">Resume</a></div>
-
                 <div class="button_cont" id="hide3"><a class="example_b bottomleft" id="button3">Projects</a></div>
             </div>
             <footer>
@@ -79,26 +84,6 @@ make a footer with github linked in logo and copyright
                     </ul>
                 </div>
             </footer>
-            <!--<div class="darkBack footerContainer centered">
-                <div class="footer">
-                  <div><a href="#" class="footerLink">Privacy policy</a></div>
-                  <div><a href="#" class="footerLink">Contact</a></div>
-                  <div><a href="#" class="footerLink">Help</a></div>
-                  <div><a href="#" class="footerLink">CAKE!!!!!</a></div>
-                  <div><a class="footerLink" href="https://github.com/Beck-Haywood">
-                    <img src="git.png" alt="githublogo" style="width:42px;height:42px;border:0;">
-                  </a></div>
-                  <div><a class="footerLink" href="https://www.linkedin.com/in/beck-haywood-47073818a/">
-                    <img src="linkedin.png" alt="linkedinlogo" style="width:42px;height:42px;border:0;">
-                  </a></div>
-                  <div><a class="footerLink" href="mailto:haywoodbeck12@gmail.com">
-                    <img src="mail.png" alt="maillogo" style="width:55px;height:42px;border:0;">
-                  </a></div>
-                  <div><a class="footerLink" href="https://www.makeschool.com/portfolio/Beck-Haywood">
-                    <img src="make.png" alt="maillogo" style="width:75px;height:60px;border:0;">
-                  </a></div>
-                </div>
-            </div>-->
         </div>
     </body>
     <script type="text/javascript" src="canvas.js"></script>
